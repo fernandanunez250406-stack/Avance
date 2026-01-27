@@ -1,0 +1,60 @@
+body {
+    background-color:
+     rgb(77, 85, 63);
+     margin: 15%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(109, 71, 21);
+}
+
+.login {
+  text-align: center;
+  background-color: rgb(242, 234, 220);
+  padding: 2rem;
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; 
+  margin-bottom: 1.5rem;
+}
+
+.registro {
+  text-align: center;
+  background-color: rgb(242, 234, 220);
+  padding: 2rem;
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+   
+}
+
+#btnlogin {
+
+  width: 100%;
+  padding: 0.5;
+  background-color:rgb(155, 142, 110);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+   margin-bottom: 1.rem;
+}
+
+#btnregistrar {
+
+  width: 100%;
+  padding: 0.5;
+  background-color:rgb(155, 142, 110);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+   margin-bottom: 1.5rem;
+}
