@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #4b523d;
+}
+
+.login_card {
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(242, 234, 220);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4b523d;
+    font-family: "Funnel Display", sans-serif;
+    margin-top: 0;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+#ingresar, #contraseña {
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#btnlogin, #btnregistrar {
+    width: 48%;
+    padding: 10px;
+    font-family: "Funnel Display", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+#btnlogin {
+    background-color: #4b533a;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#btnlogin:hover {
+    background-color: #3a412d;
+    transform: translateY(-2px);
+}
+
+#btnregistrar {
+    background-color: transparent;
+    color: #4b533a;
+    border: 2px solid #4b533a;
+}
+
+#btnregistrar:hover {
+    background-color: #4b533a;
+    color: white;
+}
+
+#link_empleado, #link_admin {
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+    color: #4b523d;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 14px;
+}
+
+#link_empleado:hover, #link_admin:hover {
+    text-decoration: underline;
+}
