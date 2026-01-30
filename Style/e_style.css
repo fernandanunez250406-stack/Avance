@@ -1,0 +1,127 @@
+*{
+    
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #3a412d;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #3a412d;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 120px;
+    height: auto;
+}
+
+/*----------------------------------------------*/
+
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 60px 20px 30px;
+    color: #4b523d;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.2);
+    background-color: rgb(242, 234, 220);
+    z-index: 999;
+    top:0;
+    left:0;
+    position: sticky;
+}
+
+#nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+#nav li{
+    list-style: none;
+    padding: 0 20px;   
+    font-family: "Funnel Display", sans-serif;
+}
+
+#nav li a {
+    margin: 10px auto;
+    display: block;
+    text-decoration: none;
+    color: #4b523d;
+    font-size: 14px;
+    
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+}
+
+/*-----------------------------------------*/
+
+.contenedor{
+    margin:5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+    justify-items: center;
+}
+
+.card{
+    width: 90%;
+    max-width: 400px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(242, 234, 220);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardttl{
+    margin:0px; 
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.15);
+}
+
+.innerbox{
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.ibt{
+    padding-bottom: 10px;
+    justify-self: center;
+    width: 175px;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.08)
+}
+
+.costFormat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 700px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
