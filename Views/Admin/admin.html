@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración</title>
+    <link rel="stylesheet" href="../../Style/admin_style.css">
+</head>
+<body>
+
+<div class="titulo">
+    <h1>Administración de Usuarios</h1>
+</div>
+
+<section>
+    <h3>Búsqueda</h3>
+    <input type="text" id="buscarUsuario" placeholder="username">
+    <input type="text" id="buscarNombre" placeholder="nombre">
+    <button id="btnBuscar">Buscar</button>
+</section>
+
+<section>
+    <button id="btnregistrar">Registrar nuevo</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Nombre</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+    </table>
+</section>
+
+<script src="../../Code/admin.js"></script>
+</body>
+</html>
