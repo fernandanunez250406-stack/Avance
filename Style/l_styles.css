@@ -14,14 +14,15 @@ body {
 #titulo {
     color:#3c322a;
     font-family: "Google Sans", sans-serif;
-
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .login_card {
     background: #f2eadc;
     padding: 30px;
     border-radius: 15px;
-    width: 320px;
+    width: 220px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     text-align: center;
 }
@@ -54,4 +55,14 @@ body {
 
 #btnlogin:hover {
     background-color: #87956d;
+}
+
+@media (min-width: 700px){
+    .login_card{
+        width: 320px;
+    }
+
+    .login_card img{
+        width:300px;
+    }
 }

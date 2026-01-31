@@ -11,6 +11,7 @@ body {
 
 .titulo {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background: white;
     padding: 20px;
@@ -18,11 +19,13 @@ body {
 }
 
 .titulo h1 {
-    margin: 0;
+    margin: 10px;
     color: #4b533a;
 }
 
 section {
+    display:grid;
+    gap:10px;
     background: rgb(242, 234, 220);
     width: 90%;
     max-width: 800px;
@@ -96,4 +99,16 @@ td button {
 
 td button:hover {
     background: #842029;
+}
+
+@media (min-width: 700px){
+    .titulo{
+        flex-direction: row;
+    }
+
+    
+}
+
+@media (min-width: 1080px){
+    
 }
