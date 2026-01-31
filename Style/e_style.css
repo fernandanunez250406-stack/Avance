@@ -35,7 +35,7 @@ h1 {
     padding:20px 60px 20px 30px;
     color: #4b523d;
     box-shadow: 0 5px 15px rgb(0,0,0,0.2);
-    background-color: rgb(242, 234, 220);
+    background-color: white;
     z-index: 999;
     top:0;
     left:0;
@@ -123,5 +123,11 @@ h1 {
 @media (min-width: 700px){
     .contenedor{
         grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1080px){
+    .contenedor{
+        grid-template-columns: repeat(3,1fr);
     }
 }

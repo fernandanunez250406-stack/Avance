@@ -21,7 +21,7 @@ body {
 }
 
 section {
-    background: white;
+    background: rgb(242, 234, 220);
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
@@ -71,6 +71,9 @@ th {
     background-color: #f2f2f2;
     color: #4b533a;
 }
+   
+
+
 
 td button {
     border: none;
