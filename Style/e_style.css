@@ -130,11 +130,7 @@ h1 {
         flex-direction: row;
     }
 
-    #row h1{
-        
-    }
-
-    .section{
+    .contenedor{
         grid-template-columns: repeat(2,1fr);
     }
 }
