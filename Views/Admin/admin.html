@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración</title>
-    <link rel="stylesheet" href="../../Style/admin_style.css">
+    <link rel="stylesheet" href="../../Style/Olive_style.css">
 </head>
 <body>
+    <section class="header">
+        <div class="PgHead">
+            <img src="../../Style/logo.png" width="100px" class="logo">
+            <h1>Administración de Usuarios</h1>
+        </div>
+        <button><a href="../Empleado/empleado.html" >Prevista de Empleado</a></button>
+    </section>
 
-<div class="titulo">
-    <img src="../../Style/logo.png" width="100px">
-    <h1>Administración de Usuarios</h1>
-    <button id="PrevistaE"><a href="../Empleado/empleado.html" >Prevista de Empleado</a></button>
-</div>
-
-<section>
-    <h3>Búsqueda</h3>
-    <input type="text" id="buscarUsuario" placeholder="username">
-    <input type="text" id="buscarNombre" placeholder="nombre">
-    <button id="btnBuscar">Buscar</button>
-</section>
-
-<section>
-    <button id="btnregistrar">Registrar nuevo</button>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Username</th>
-                <th>Nombre</th>
-                <th>Eliminar</th>
-            </tr>
-        </thead>
-        <tbody id="tablaUsuarios"></tbody>
-    </table>
-</section>
-
+    <div class="container">
+        <div class="bigCard">
+            <div class="cardttl">
+                <h1>Búsqueda</h1>
+            </div>
+            <input type="text" id="A_buscarUsuario" placeholder="nombre de usuario">
+            <input type="text" id="A_buscarNombre" placeholder="nombre">
+            <button>Buscar</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bigCard">
+            <button>Registrar nuevo</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Nombre</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody class="table1"></tbody>
+            </table>
+        </div>
+    </div>
 <script src="../../Code/admin.js"></script>
 </body>
 </html>
