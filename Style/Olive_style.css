@@ -1,13 +1,11 @@
 *{
+    margin:0;
+    padding:0;
     
 }
 
 body {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     background-color: #3a412d;
-    
 }
 
 h1 {
@@ -18,21 +16,21 @@ h1 {
     margin-top: 0;
 }
 
-#logo {
+.logo {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0px auto;
     max-width: 120px;
     height: auto;
 }
 
 /*----------------------------------------------*/
 
-#header{
+.header{
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: space-between;
-    padding:20px 60px 20px 30px;
+    padding:0 60px 20px 60px;
     color: #4b523d;
     box-shadow: 0 5px 15px rgb(0,0,0,0.2);
     background-color: white;
@@ -42,39 +40,45 @@ h1 {
     position: sticky;
 }
 
-#row{
+.PgHead{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.row{
     display: flex;
     flex-direction: row;
 }
-#nav{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
 
+.nav{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-self: center;
 }
-#nav li{
+
+.nav li{
     list-style: none;
-    padding: 0 20px;   
+    padding: 0 10px;   
     font-family: "Funnel Display", sans-serif;
 }
 
-#nav li a {
+.nav li a {
     margin: 10px auto;
     display: block;
     text-decoration: none;
     color: #4b523d;
     font-size: 14px;
-    
 }
 
-#nav li a:hover {
+.nav li a:hover {
     text-decoration: underline;
 }
 
 /*-----------------------------------------*/
 
-.contenedor{
+.container{
     margin:5%;
     display: grid;
     grid-template-columns: 1fr;
@@ -125,18 +129,23 @@ h1 {
     grid-template-columns: 1fr 1fr;
 }
 
-@media (min-width: 700px){
-    #header{
+@media (min-width: 600px){
+    .header{
         flex-direction: row;
+        padding:10px 60px 10px 60px;
     }
 
-    .contenedor{
+    .nav{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container{
         grid-template-columns: repeat(2,1fr);
     }
 }
 
 @media (min-width: 1080px){
-    .contenedor{
+    .container{
         grid-template-columns: repeat(3,1fr);
     }
 }
